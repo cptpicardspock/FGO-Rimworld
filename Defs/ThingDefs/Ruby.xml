@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+
+		<defName>Wand_Illya</defName>
+		<label>ruby</label>
+		<description>A magical wand that can transform the owner into a magical girl.</description>
+		<techLevel>Spacer</techLevel>
+
+		<graphicData>
+			<texPath>Weapons/Ruby</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+	<generateCommonality>0</generateCommonality>
+
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>1</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>0.80</RangedWeapon_Cooldown>
+		</statBases>
+
+		<recipeMaker>
+
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+
+		<recipeUsers Inherit="False">
+			<li>FabricationBench</li>
+		</recipeUsers>
+		
+		</recipeMaker>
+		
+		<costList>
+			<Plasteel>10</Plasteel>
+			<Gold>3</Gold>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+
+		<weaponTags>
+			<li>FateGO</li>
+		</weaponTags>
+
+		<verbs>
+
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Manabolt_Ruby</defaultProjectile>
+				<warmupTime>0.2</warmupTime>
+				<range>40.0</range>
+				<soundCast>Manabolt_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>0.5</cooldownTime>
+			</li>
+		</tools>
+		
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseBullet">
+
+		<defName>Manabolt_Ruby</defName>
+		<label>mana shot</label>
+
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.80</armorPenetrationBase>
+			<speed>80</speed>
+		</projectile>
+		
+	</ThingDef>
+	
+</Defs>

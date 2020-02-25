@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+
+
+	<!-- ================================ uniform ====================================== -->
+
+
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>FateGO_Kiyohimekimono</defName>
+		<label>Kiyohime kimono</label>
+		<description>Kiyohime kimono</description>
+		<graphicData>
+			<texPath>Apparel/Kiyohime/FGOkiyohime</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+			<tradeability>Sellable</tradeability>
+			<costList>
+				<Cloth>150</Cloth>
+				<Gold>15</Gold>
+			</costList>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+				<MaxHitPoints>500</MaxHitPoints>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Blunt>1.20</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.00</ArmorRating_Heat>
+			<Insulation_Cold>300</Insulation_Cold>
+				<Insulation_Heat>1000</Insulation_Heat>
+				<Beauty>10</Beauty>
+				<EquipDelay>4</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>2.0</MoveSpeed>
+			<MeleeDodgeChance>4.0</MeleeDodgeChance>
+			<Flammability>-1</Flammability>
+			<AnimalGatherYield>0.5</AnimalGatherYield>
+			<PlantHarvestYield>0.5</PlantHarvestYield>
+			<HungerRateMultiplier>-0.2</HungerRateMultiplier>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Kiyohime/FGOkiyohime</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+		</apparel>
+		<generateCommonality>0</generateCommonality>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(1,1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<recipeMaker>
+			<researchPrerequisite>Devilstrand</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>FateGO_Illyadress</defName>
+		<label>Illya's Dress</label>
+		<description>Illya's Dress</description>
+		<graphicData>
+			<texPath>Apparel/Illya/FGOIllya</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+			<tradeability>Sellable</tradeability>
+			<costList>
+				<Cloth>150</Cloth>
+				<Gold>5</Gold>
+			</costList>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+				<MaxHitPoints>700</MaxHitPoints>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Blunt>1.20</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.80</ArmorRating_Heat>
+			<Insulation_Cold>30</Insulation_Cold>
+				<Insulation_Heat>30</Insulation_Heat>
+				<Beauty>10</Beauty>
+				<EquipDelay>4</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>5.0</MoveSpeed>
+			<MeleeDodgeChance>10.0</MeleeDodgeChance>
+			<Flammability>-1</Flammability>
+			<AnimalGatherYield>0.5</AnimalGatherYield>
+			<PlantHarvestYield>0.5</PlantHarvestYield>
+			<HungerRateMultiplier>-0.5</HungerRateMultiplier>
+			<WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Illya/FGOIllya</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+		</apparel>
+		<generateCommonality>0</generateCommonality>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(1,1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<recipeMaker>
+			<researchPrerequisite>Devilstrand</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>FateGO_Miyudress</defName>
+		<label>Miyu's Dress</label>
+		<description>Miyu's Dress</description>
+		<graphicData>
+			<texPath>Apparel/Miyu/FGOMiyu</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+			<tradeability>Sellable</tradeability>
+			<costList>
+				<Cloth>150</Cloth>
+				<Gold>5</Gold>
+			</costList>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+				<MaxHitPoints>700</MaxHitPoints>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Blunt>1.20</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.20</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.80</ArmorRating_Heat>
+			<Insulation_Cold>30</Insulation_Cold>
+				<Insulation_Heat>30</Insulation_Heat>
+				<Beauty>10</Beauty>
+				<EquipDelay>4</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>5.0</MoveSpeed>
+			<MeleeDodgeChance>10.0</MeleeDodgeChance>
+			<Flammability>-1</Flammability>
+			<AnimalGatherYield>0.5</AnimalGatherYield>
+			<PlantHarvestYield>0.5</PlantHarvestYield>
+			<HungerRateMultiplier>-0.5</HungerRateMultiplier>
+			<WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Miyu/FGOMiyu</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+		</apparel>
+		<generateCommonality>0</generateCommonality>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(1,1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<recipeMaker>
+			<researchPrerequisite>Devilstrand</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>FateGO_Rin</defName>
+		<label>Rin's Clothes</label>
+		<description>Rin's Clothes</description>
+		<graphicData>
+			<texPath>Apparel/Rin/FGORin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+			<tradeability>Sellable</tradeability>
+			<costList>
+				<Cloth>100</Cloth>
+			</costList>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+				<MaxHitPoints>700</MaxHitPoints>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>0.5</Mass>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.80</ArmorRating_Heat>
+			<Insulation_Cold>30</Insulation_Cold>
+				<Insulation_Heat>30</Insulation_Heat>
+				<Beauty>8</Beauty>
+				<EquipDelay>4</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>1.0</MoveSpeed>
+			<MeleeDodgeChance>4.0</MeleeDodgeChance>
+			<Flammability>-1</Flammability>
+			<PlantHarvestYield>0.5</PlantHarvestYield>
+			<HungerRateMultiplier>-0.2</HungerRateMultiplier>
+			<WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Rin/FGORin</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+		</apparel>
+		<generateCommonality>0</generateCommonality>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(1,1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<recipeMaker>
+			<researchPrerequisite>Devilstrand</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+</Defs>

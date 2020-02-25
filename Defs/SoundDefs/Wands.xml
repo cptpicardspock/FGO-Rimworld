@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<SoundDef>
+		<defName>Manabolt_Fire</defName>
+		<eventNames/>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		
+		<subSounds>
+
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/Fire_Ruby</clipPath>
+					</li>
+				</grains>
+				
+				<volumeRange>
+					<min>5.52942</min>
+					<max>6.52942</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9982353</min>
+					<max>1.045882</max>
+				</pitchRange>
+				
+			</li>
+			
+		</subSounds>
+	</SoundDef>
+</Defs>

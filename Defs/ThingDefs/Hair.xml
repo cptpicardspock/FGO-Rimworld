@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<HairDef>
+		<defName>FGO_Kiyohime</defName>
+		<label>FGO Kiyohime</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/Kiyohime</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+	</HairDef>
+	
+		<HairDef>
+		<defName>FGO_Illya</defName>
+		<label>FGO Illya</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/Illya</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+	</HairDef>
+	
+		<HairDef>
+		<defName>FGO_Miyu</defName>
+		<label>FGO Miyu</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/Miyu</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>FGO_Rin</defName>
+		<label>FGO Rin</label>
+		<hairGender>Female</hairGender>
+		<texPath>Hair/Rin</texPath>
+		<hairTags>
+			<li>Urban</li>
+			<li>Rural</li>
+		</hairTags>
+	</HairDef>
+</Defs>

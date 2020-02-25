@@ -1,0 +1,88 @@
+<Defs>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+			<defName>Fan_Kiyohime</defName>
+			<label>Kiyohime's Fan</label>
+			<description>The fan of the greatest waifu ever.</description>
+			<graphicData>
+				<texPath>Weapons/Kiyohime_Fan</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<soundInteract>Interact_Rifle</soundInteract>
+			<generateCommonality>0</generateCommonality>
+			<statBases>
+				<WorkToMake>10000</WorkToMake>
+				<Mass>0.5</Mass>
+				<RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+			</statBases>
+			<costList>
+				<RawFungus>50</RawFungus>
+				<Gold>10</Gold>
+				<Chemfuel>10</Chemfuel>
+			</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		
+		<weaponTags>
+			<li>FateGO</li>
+		</weaponTags>
+		
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Fire_Fan</defaultProjectile>
+				<warmupTime>2.0</warmupTime>
+				<range>28</range>
+				<forcedMissRadius>0.5</forcedMissRadius>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	
+		<tools>
+			<li>
+			<label>stock</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>1</cooldownTime>
+		</li>
+		<li>
+			<label>barrel</label>
+			<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>1</cooldownTime>
+		</li>
+		</tools>
+	
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Fire_Fan</defName>
+		<label>incendiary bolt</label>
+		<graphicData>
+			<texPath>Weapons/Kiyohime_Fire</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>50</speed>
+			<damageDef>Flame</damageDef>
+			<explosionRadius>2</explosionRadius>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+</Defs>
